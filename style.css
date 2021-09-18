@@ -1,0 +1,214 @@
+*{
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body{
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.conteudo, header{
+  margin: 25px 105px;
+}
+
+header, .inicio{
+  justify-content: space-between;
+  display: flex;
+}
+
+.inicio{
+  padding: 15px 0 25px 0;
+}
+
+h2{
+  font-weight: lighter;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+h3{
+  font-weight: lighter;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/*botão ordenar*/
+
+.ordenar {
+  margin-left: 80%;
+}
+
+select{
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+select option{
+  margin: 10px 0;
+  padding: 50px 0;
+}
+
+select option:hover::selection{
+  background-color: rgb(6, 197, 197);
+}
+
+.selected:checked{
+  display: none;
+}
+
+/*botão comprar*/
+
+.button{
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 10px 10px 0;
+  color: white;
+  font-weight: bold;
+  justify-content: space-evenly;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: black;
+  padding: 15px 55px;
+}
+
+/*botão carregar mais*/
+
+#button{
+  background-color: rgb(6, 197, 197);
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  margin: 70px 50% 0 40%;
+  font-size: 15px;
+}
+
+
+.cores, .preco{
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+/*cores e preços*/
+
+.check{
+  cursor: pointer;
+  appearance: none;
+  border: solid black 1px;
+  width: 16px;
+  height: 16px;
+  outline: none;
+  border-radius: 0;
+  padding: 2px;
+}
+
+.check::before{
+  content: '';
+  position:absolute;
+  height: 10px;
+  width: 10px;
+  background: rgb(6, 197, 197);
+  opacity: 0;
+  transition: all 600ms ease-in-out;
+}
+
+.check:checked::before{
+  opacity: 1;
+}
+
+.check:focus{
+  box-shadow: 0 0 1px black;
+}
+
+/*peças*/
+
+.pecas{
+  max-width: 75%;
+  align-items: center;
+  float: right;
+  position:relative;
+  justify-content:space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  margin-right: 0px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 15px;
+}
+
+.space{
+  letter-spacing: 2px;
+}
+
+
+p{
+  text-align: center;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+.preco-pecas{
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+/*tamanhos das peças*/
+
+.tamanhos{
+  padding: 25px 25px 25px 0;
+  width: 20%;
+}
+
+.btam{
+  border: 1px solid rgb(182, 181, 181);
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  padding: 5px;
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  color: rgb(182, 181, 181);
+  cursor: pointer;
+  transition: all 600ms ease-in-out;
+  appearance: none;
+}
+
+.btam:hover{
+  border-color: rgb(6, 197, 197);
+  color: black;
+  transition: all 600ms ease-in-out;
+}
+
+.btam:active{
+  border-color: rgb(6, 197, 197);
+  color: black;
+  transition: all 600ms ease-in-out;
+}
+
+/*footer*/
+
+footer{
+  background-color: black;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
